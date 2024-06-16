@@ -3,18 +3,43 @@
 @tailwind utilities;
 
 :root {
-    --const-color-white: theme('colors.const-color-white');
-    --const-color-black: theme('colors.const-color-black');
-    --bg-color-0: theme('colors.bg-color-0');
-    --bg-color-1: theme('colors.bg-color-1');
-    --text-color-1: theme('colors.text-color-1');
-    --text-color-2: theme('colors.text-color-2');
+	--const-color-white: theme("colors.const-color-white");
+	--const-color-black: theme("colors.const-color-black");
+	--bg-color-0: theme("colors.bg-color-0");
+	--bg-color-1: theme("colors.bg-color-1");
+	--text-color-1: theme("colors.text-color-1");
+	--text-color-2: theme("colors.text-color-2");
 }
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: var(--pol-bg-0);
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--pol-bg-0);
+}
+
+.cesium-credit-textContainer {
+	display: none !important;
+}
+.cesium-credit-expand-link {
+	display: none !important;
+}
+
+.cesium-viewer-bottom {
+	left: 0 !important;
+}
+.cesium-credit-logoContainer {
+	display: block !important;
+
+	width: 50%;
+	height: 50%;
+}
+
+.cesium-viewer-timelineContainer {
+	display: none !important;
+}
+
+.cesium-viewer-animationContainer {
+	display: none !important;
 }
