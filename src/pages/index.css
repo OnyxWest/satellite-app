@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --const-color-white: theme('colors.const-color-white');
+    --const-color-black: theme('colors.const-color-black');
+    --bg-color-0: theme('colors.bg-color-0');
+    --bg-color-1: theme('colors.bg-color-1');
+    --text-color-1: theme('colors.text-color-1');
+    --text-color-2: theme('colors.text-color-2');
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--pol-bg-0);
+}

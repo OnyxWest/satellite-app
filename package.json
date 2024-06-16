@@ -3,17 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "postinstall": "symlink-dir node_modules/cesium/Build/Cesium public/cesium"
   },
   "type": "module",
   "dependencies": {
+    "cesium": "^1.118.2",
+    "mini-css-extract-plugin": "^2.9.0",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "satellite.js": "^5.0.0"
+    "resium": "^1.17.4",
+    "satellite.js": "^5.0.0",
+    "webpack": "^5.92.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.5.0",
@@ -23,13 +29,15 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8.57.0",
+    "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.34.2",
     "postcss": "^8",
+    "prettier": "^3.3.2",
+    "symlink-dir": "^6.0.0",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.4.5",
+    "typescript": "^5",
     "typescript-eslint": "^7.13.0"
   }
 }
