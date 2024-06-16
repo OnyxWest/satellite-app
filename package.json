@@ -13,6 +13,7 @@
   "type": "module",
   "dependencies": {
     "cesium": "^1.118.2",
+    "mini-css-extract-plugin": "^2.9.0",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
