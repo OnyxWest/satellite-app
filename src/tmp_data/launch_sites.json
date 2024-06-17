@@ -1,0 +1,134 @@
+{
+	"sites": [
+		{
+			"name": "Kennedy Space Center/Cape Canaveral, USA",
+			"cords": [28.492214637789743, -80.5720860692449],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Vandenberg Air Force Base, USA",
+			"cords": [34.7519097240044, -120.52119742861935],
+			"description": "ooga booga"
+		},
+		{
+			"name": "ombarovsky Air Base, Russia",
+			"cords": [50.80386187548297, 59.516346084162734],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Wallops Flight Facility, USA",
+			"cords": [37.933712434705626, -75.47049055482529],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Guiana Space Centre, French Guiana",
+			"cords": [5.169410961303922, -52.683955108002564],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Jiuquan Satellite Launch Center, China",
+			"cords": [40.987432495019576, 100.20835414250989],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Kodiak Launch Complex, Alaska, USA",
+			"cords": [57.430721069678334, -152.3535108768721],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Uchinoura Space Center, Japan",
+			"cords": [31.251303232122225, 131.0828005734062],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Omelek Island, Kwajalein Atoll",
+			"cords": [9.048364316891728, 167.74356825763417],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Naro Space Center, South Korea",
+			"cords": [34.452389980329194, 127.51853761085442],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Plesetsk Missile and Space Complex, Russia",
+			"cords": [62.92795249885467, 40.575377252847275],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Imam Khomeini Space Center, Iran",
+			"cords": [35.23938453982716, 53.950949664343526],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Satish Dhawan Space Centre, India",
+			"cords": [13.72713682347383, 80.22930109816458],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Taiyuan Space Center, China",
+			"cords": [38.849262651212015, 111.60987129364982],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Tanegashima Space Center, Japan",
+			"cords": [30.401553782397407, 130.97099960033668],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Baikonur Cosmodrome, Kazakhstan",
+			"cords": [45.96477526924598, 63.30563976831236],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Woomera Test Range, Australia",
+			"cords": [-30.95378224277681, 136.53199529728533],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Xichang Launch Facility, China",
+			"cords": [27.893212381057015, 102.24448139010885],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Sohae Satellite Launching Station, North Korea",
+			"cords": [39.66010612060495, 124.70511935465494],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Alcantara Space Center, Brasil",
+			"cords": [-2.3150641712889164, -44.369164031184106],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Tonghae Satellite Launching Ground, North Korea",
+			"cords": [40.84075648587184, 129.49724598499003],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Vostochny Cosmodrome, Russia",
+			"cords": [51.84950477061509, 128.35583973696157],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Holloman Air Force Base",
+			"cords": [32.84387710115436, -106.09944907862831],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Kauai Test Facility",
+			"cords": [22.02335691770847, -159.78505670213178],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Mahia Rocket Lab Launch Complex 1",
+			"cords": [-39.2597596068178, 177.8678263674517],
+			"description": "ooga booga"
+		},
+		{
+			"name": "Wenchang Spacecraft Launch Site",
+			"cords": [19.615239863937713, 110.9512617466145],
+			"description": "ooga booga"
+		}
+	]
+}
