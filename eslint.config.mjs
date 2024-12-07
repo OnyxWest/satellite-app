@@ -7,7 +7,10 @@ import parser from '@typescript-eslint/parser'
 
 export default tseslint.config(eslint.configs.recommended, ...tseslint.configs.recommended,{
     rules: {
-
+			// Indent with 2 spaces
+			"indent": ["error", 2],
+			"react/jsx-indent": ["error", 2],
+			"react/jsx-indent-props": ["error", 2],
     },
     files: ['**/*.{ts,tsx}'],
     plugins:{

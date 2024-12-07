@@ -5,12 +5,12 @@ import LaunchSites from "./LaunchSites";
 import SatelliteCollection from "./SatelliteCollection";
 
 export default function Cesium() {
-    return (
-        <Viewer
-            full
-        >
-            <LaunchSites />
-            <SatelliteCollection />
-        </Viewer>
-    );
+  return (
+    <Viewer
+      full
+    >
+      <LaunchSites />
+      <SatelliteCollection />
+    </Viewer>
+  );
 }
