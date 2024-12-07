@@ -3,6 +3,7 @@ import React, {useEffect, useRef, useState} from "react";
 import { Cartesian3, Color, Transforms } from "cesium";
 import { PointPrimitiveCollection } from "resium";
 import { SatRec } from "satellite.js";
+import { PointPrimitive } from "cesium";
 
 import {satRecToEci} from "../helpers/util";
 import {getTles} from "../helpers/services/tle"
@@ -12,10 +13,10 @@ const UPDATE_RATE = 75;
 
 export default function SatelliteCollection() {
   const satRecsRef = useRef<SatRec[]>([]);
-  const positionsRef = useRef([]);
+  const positionsRef = useRef<(Cartesian3 | null)[]>([]);
   const batchIndexRef = useRef(0);
-  const pointsRef = useRef([]);
-  const collectionRef = useRef<typeof PointPrimitiveCollection | undefined>();
+  const pointsRef = useRef<(PointPrimitive | null)[]>([]);
+  const collectionRef = useRef<typeof PointPrimitiveCollection | null>(null);
 
   const [collectionsMounted, setCollectionsMounted] = useState(false)
 
@@ -47,7 +48,7 @@ export default function SatelliteCollection() {
     fetchData();
   };
 
-  const updateSatellitePositions = (satRecs, time, start, end) => {
+  const updateSatellitePositions = (satRecs: SatRec[], time: Date, start: number, end: number) => {
     for (let i = start; i < end; i++) {
       const satRec = satRecs[i];
       const position = satRecToEci(satRec, time);
