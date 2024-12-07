@@ -32,3 +32,14 @@ export const satRecToGeodetic = (satRec: SatRec, time: Date): GeodeticLocation |
     return eciToGeodetic(posEci, gmst);
 };
 
+/* Given a TLE and a time, output the ECI X,Y,Z coordinates. */
+export const tleToEci = (line1: string, line2: string, time: Date)
+    : { x: number, y: number, z: number } | null => {
+    const satrec = twoline2satrec(line1, line2);
+    const posEci = propagate(satrec, time).position;
+    if (!posEci) {
+    // throw new Error('Error propagating satellite position');
+        return null;
+    }
+    return { x: posEci.x, y: posEci.y, z: posEci.z };
+};

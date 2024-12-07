@@ -2,13 +2,15 @@
 import React from "react";
 import { Viewer } from "resium";
 import { LaunchSites } from "./launch_sites";
+import SatelliteCollection from "./SatelliteCollection";
 
 export default function Cesium() {
-	return (
-		<div>
-			<Viewer full>
-				<LaunchSites />
-			</Viewer>
-		</div>
-	);
+    return (
+        <Viewer
+            full
+        >
+            <LaunchSites />
+            <SatelliteCollection />
+        </Viewer>
+    );
 }
