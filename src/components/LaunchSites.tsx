@@ -2,7 +2,7 @@ import { Entity } from "resium";
 import { Cartesian3, NearFarScalar } from "cesium";
 import launch_sites from "../tmp_data/launch_sites.json";
 
-export const LaunchSites = () => {
+export default function LaunchSites() {
 	return launch_sites.sites.map((site) => (
 		<Entity
 			key={site.name}
