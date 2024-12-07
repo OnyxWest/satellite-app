@@ -14,7 +14,7 @@
   "dependencies": {
     "cesium": "^1.118.2",
     "mini-css-extract-plugin": "^2.9.0",
-    "next": "14.2.4",
+    "next": "14.2.20",
     "react": "^18",
     "react-dom": "^18",
     "resium": "^1.17.4",
