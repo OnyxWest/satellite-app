@@ -52,7 +52,7 @@ export default function SatelliteCollection() {
     for (let i = start; i < end; i++) {
       const satRec = satRecs[i];
       const position = satRecToEci(satRec, time);
-      if (position) {
+      if (position && positionsRef.current[i]) {
         pointsRef.current[i].position = new Cartesian3(position.x * 1000, position.y * 1000, position.z * 1000);
       }
     }
