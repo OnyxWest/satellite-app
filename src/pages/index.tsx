@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
 const Globe = dynamic(
-  () => import("../components/Globe.tsx"),
+  () => import("../components/Globe"),
   { ssr: false }
 );
 
