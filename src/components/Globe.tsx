@@ -17,7 +17,7 @@ export default function Globe() {
       full
     >
       <LaunchSites />
-      <SatelliteCollection />
+      <SatelliteCollection batch_size={1000} update_rate={75}/>
     </Viewer>
   );
 }

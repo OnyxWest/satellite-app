@@ -16,7 +16,8 @@ export const tleToSatRec = (line1: string, line2: string) : SatRec => {
 /* Given a SatRec and a time, output the ECI X,Y,Z coordinates. */
 export const satRecToEci = (satRec: SatRec, time: Date): EciVec3<number> | null => {
   const posEci = propagate(satRec, time).position;
-  if (!posEci) {
+  // when posEci is boolean, it means there was an error propagating the satellite
+  if (!posEci || typeof posEci == "boolean") {
     return null;
   }
   return posEci;
@@ -26,7 +27,8 @@ export const satRecToEci = (satRec: SatRec, time: Date): EciVec3<number> | null 
 export const satRecToGeodetic = (satRec: SatRec, time: Date): GeodeticLocation | null => {
   const gmst = gstime(time);
   const posEci = propagate(satRec, time).position;
-  if (!posEci) {
+  // when posEci is boolean, it means there was an error propagating the satellite
+  if (!posEci || typeof posEci == "boolean") {
     return null;
   }
   return eciToGeodetic(posEci, gmst);
@@ -34,12 +36,12 @@ export const satRecToGeodetic = (satRec: SatRec, time: Date): GeodeticLocation |
 
 /* Given a TLE and a time, output the ECI X,Y,Z coordinates. */
 export const tleToEci = (line1: string, line2: string, time: Date)
-    : { x: number, y: number, z: number } | null => {
+    : EciVec3<number> | null => {
   const satrec = twoline2satrec(line1, line2);
   const posEci = propagate(satrec, time).position;
-  if (!posEci) {
-  // throw new Error('Error propagating satellite position');
+  // when posEci is boolean, it means there was an error propagating the satellite
+  if (!posEci || typeof posEci == "boolean") {
     return null;
   }
-  return { x: posEci.x, y: posEci.y, z: posEci.z };
+  return posEci;
 };

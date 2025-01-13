@@ -2,6 +2,8 @@
 import webpack from 'webpack';
 
 const nextConfig = {
+  output: "export",
+  distDir: "./dist",
   reactStrictMode: true,
   webpack: config => {
     config.plugins.push(
