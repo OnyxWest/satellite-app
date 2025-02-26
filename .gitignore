@@ -31,3 +31,5 @@ out
 
 # cesium
 /public/cesium
+
+.env
