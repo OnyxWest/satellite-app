@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
-import { Scene, ScreenSpaceCameraController, SkyBox, Viewer } from "resium";
-import * as Cesium from "cesium";
+import { ScreenSpaceCameraController, SkyBox, Viewer } from "resium";
+import { Ion } from "cesium";
 import LaunchSites from "./LaunchSites";
 import SatelliteCollection from "./SatelliteCollection";
 
 export default function Globe() {
 	if (process.env.NEXT_PUBLIC_CESIUM_ACCESS_TOKEN) {
-		Cesium.Ion.defaultAccessToken =
-			process.env.NEXT_PUBLIC_CESIUM_ACCESS_TOKEN;
+		Ion.defaultAccessToken = process.env.NEXT_PUBLIC_CESIUM_ACCESS_TOKEN;
 	} else {
 		console.error("NEXT_PUBLIC_CESIUM_ACCESS_TOKEN is not set");
 	}
@@ -16,8 +15,8 @@ export default function Globe() {
 	return (
 		<Viewer full skyAtmosphere={false}>
 			<ScreenSpaceCameraController
-				maximumZoomDistance={300000000}
-				minimumZoomDistance={500000}
+				maximumZoomDistance={10000000000}
+				minimumZoomDistance={700000}
 			/>
 			<SkyBox
 				show={true}
