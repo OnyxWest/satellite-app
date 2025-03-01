@@ -53,7 +53,7 @@ const SatelliteCollection: FC<SatelliteCollectionProps> = (props) => {
 					// @ts-expect-error - cesiumElement props does not include add method
 					return collectionRef.current?.cesiumElement?.add({
 						position: initialPositions[i],
-						pixelSize: 2.5,
+						pixelSize: 2.7,
 						color: Color.WHITE,
 					});
 				}

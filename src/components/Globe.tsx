@@ -1,6 +1,12 @@
 "use client";
 import React from "react";
-import { ScreenSpaceCameraController, SkyBox, Viewer } from "resium";
+import {
+	Camera,
+	Scene,
+	ScreenSpaceCameraController,
+	SkyBox,
+	Viewer,
+} from "resium";
 import { Ion } from "cesium";
 import LaunchSites from "./LaunchSites";
 import SatelliteCollection from "./SatelliteCollection";
@@ -13,10 +19,12 @@ export default function Globe() {
 	}
 
 	return (
-		<Viewer full skyAtmosphere={false}>
+		<Viewer full skyAtmosphere={false} targetFrameRate={60}>
 			<ScreenSpaceCameraController
 				maximumZoomDistance={10000000000}
 				minimumZoomDistance={700000}
+				//@ts-expect-error - typescript does not recognize zoomFactor prop even though its in the typings lol
+				zoomFactor={3}
 			/>
 			<SkyBox
 				show={true}
